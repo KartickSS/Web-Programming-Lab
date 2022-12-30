@@ -1,0 +1,71 @@
+
+<html>
+<head>
+<title>Quiz applicaion</title>
+<style>
+    body{
+        background-color: grey;
+    }
+</style>
+</head>
+<body>
+<h1>QUIZ APPLICATION BASED ON JAVASCRIPT</h1>
+<form id="quiz" name="quiz">
+<p class="question">what is the captital of bihar?</p>
+<input type="radio" id="mc" name="question1" value="patna" />patna<br />
+<input type="radio" id="mc" name="question1" value="bhuvaneshwar" />bhuvaneshwar<br />
+<p class="question">what is the capital of kerala?</p>
+<input type="radio" id="mc" name="question2" value="thiruvananthapuram"
+/>thiruvananthapuram<br>
+<input type="radio" id="mc" name="question2" value="kollam" />kollam
+<p class="question">what is the capital of gujarat?</p>
+<input type="radio" id="mc" name="question3" value="gandhinagar" />gandhinagar
+<br>
+<input type="radio" id="mc" name="question3" value="goa" />goa<br />
+<button onclick="check()">Click me</button>
+</form>
+<p id="message"></p>
+<div id="aftersubmit">
+<p id="number_correct"></p>
+
+</div>
+</body>
+
+<script>
+function check()
+{
+	var question1=document.quiz.question1.value;
+	var question2=document.quiz.question2.value;
+	var question3=document.quiz.question3.value;
+	var correct=0;
+	if(question1=="patna")
+	{
+		correct++;
+	}
+	if(question2=="thiruvananthapuram")
+	{
+		correct++;
+	}
+	if(question3=="gandhinagar")
+	{
+		correct++;
+	}
+	if(correct==0)
+	{
+		
+		alert("Study Well! your score is " + correct );
+	}
+	if(correct>0&&correct<3)
+	{
+		
+		alert("Your score is " + correct );
+	}
+	if(correct==3)
+	{
+		
+		alert("Great job your score is " + correct );
+	}
+	
+}
+</script>
+</html>

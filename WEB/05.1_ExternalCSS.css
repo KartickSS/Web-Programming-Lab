@@ -1,0 +1,13 @@
+.name{
+text-transform:uppercase;
+}
+.text{
+text-decoration:underline;
+}
+body{
+    background-image: linear-gradient(#FFA384, #74BDCB);
+background-repeat:no-repeat;
+color: white;
+height: 100vh; 
+
+}
